@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type = "text/javascript" src ="scripts.js"></script>
+    <link type="text/css" href="styles.css" rel='stylesheet'>
+    <title>Weather Info</title>
+  </head>
+
+<body> 
+    <div class="title">
+        <h2>Current Weather By City Name With OpenWeather API</h2>
+    </div>
+    <div class="title">
+        <h3>By Charles Ryan</h3>
+    </div>
+        <div id="input">
+            <form>
+                <p>
+                    <label for="city">City:</label>
+                    <input type="text" id="city"></input> <br/><br/>
+                    Units:  
+                        <select id="units">
+                          <option value="imperial">Imperial</option>
+                          <option value="metric">Metric</option>
+                        </select>
+                    </br></br>
+                    <input id="button" type="button" value="Go" for="city"></input>
+                </p>
+            </form>
+        </div> <br/>
+
+        <div id="output">
+            <p class="tidbits">Current City: <span id="cTarget">Atlantis</span></p> 
+            <p class="tidbits">Temperature: <span id="tTarget">Enter a real city to find out!</span></p>
+            <p class="tidbits">Conditions: <span id="gTarget">Wet</span></p> 
+            <p class="tidbits">Windspeed: <span id="wTarget">0</span></p> 
+        </div>
+        <div id="logo">
+            <a href="http://www.charlescryan.com" target="_blank">
+                <img src="http://i.imgur.com/kJf0RRx.jpg" height="100px" width="130px">
+            </a>
+        </div>
+</body>
+</html>
